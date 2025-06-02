@@ -9,16 +9,20 @@ interface SidebarProps {
     className?: string;
 }
 
-
-
 export const Sidebar = ({ className }:SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
 
     const onToggle = () => setCollapsed(!collapsed);
 
     return (
-        <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
-            <Button onClick={onToggle}>
+        <div
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
+            data-testid="sidebar"
+        >
+            <Button
+                onClick={onToggle}
+                data-testid="sidebar-toggle"
+            >
                 toggle
             </Button>
             <div className={cls.switchers}>
