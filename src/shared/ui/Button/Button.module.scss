@@ -7,6 +7,7 @@
     margin: 0;
     border: none;
     background: none;
+    color: var(--primary-color);
     outline: none;
 }
 
@@ -17,4 +18,11 @@
     outline: none;
     border: none;
     border-radius: 10px;
+}
+
+.outline {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: none;
+    padding: 15px;
 }
