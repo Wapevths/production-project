@@ -13,9 +13,9 @@ export const BugButton = () => {
         if (error) throw new Error();
     }, [error]);
 
-    return (
-        <Button onClick={handleThrow} theme={ThemeButton.ERROR}>
-            throw error
-        </Button>
-    );
+    // return (
+    //     <Button onClick={handleThrow} theme={ThemeButton.ERROR}>
+    //         throw error
+    //     </Button>
+    // );
 };

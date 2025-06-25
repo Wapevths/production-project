@@ -11,7 +11,6 @@ export const PageError = ({ className }:PageErrorProps) => {
     const { t } = useTranslation();
 
     const reloadPage = () => {
-        location.reload();
     };
 
     return (
