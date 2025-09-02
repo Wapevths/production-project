@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 
 // Компонент для тестирования ErrorBoundary
 export const BugButton = () => {
@@ -14,7 +14,7 @@ export const BugButton = () => {
     }, [error]);
 
     // return (
-    //     <Button onClick={handleThrow} theme={ThemeButton.ERROR}>
+    //     <Button onClick={handleThrow} theme={ButtonTheme.ERROR}>
     //         throw error
     //     </Button>
     // );
